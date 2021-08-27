@@ -1,165 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jim's resume</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <!-- this one is for the hosting on heroku -->
+    <title>Profile</title>
 </head>
-
 <body>
+    
     <header>
-        <h1 class="name">James Mutuku</h1>
-        <h2 class="icon">📄</h2>
-        <h2>Curriculum Vitae</h2>
-        <!-- maybe have social links here -->
+        <nav>
+            <ul>
+                <li><a href="./pages/resume.html">resume</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <article>
-
-            <section class="about-me">
-                <h3>😆 I am...</h3>
-                <hr />
-                <section class="ul-wrapper">
-                    <ul class="about-me-data">
-                        <li><strong>James Mutuku</strong> he/him</li>
-                        <li>A real life <strong><a href="https://www.urbandictionary.com/define.php?term=otaku"
-                                    class="grey-highlight black"
-                                    title=" young person who is obsessed with computers">otaku</a></strong></li>
-                        <li>Interested in <strong>web (full stack) and rust</strong></li>
-                        <li>Enjoying <strong>contributing to OSS</strong></li>
-                        <li>Reads <strong>Novels and watches a lot ot TV</strong></li>
-                    </ul>
-                    <ul class="personal-data">
-                        <li>☎️ <a class="grey-highlight black" href="tel:0724472142"></a> 0724472142</li>
-                        <li>📬 P.O BOX 0724472142-00515 Kenya</li>
-                        <li>✉️ <a class="grey-highlight black"
-                                href="mailto:jimmyimpulse@outlook.com">jimmyimpulse@outlook.com</a></li>
-                        <li>🔗 <a class="grey-highlight black" href="https://github.com/jim4067">github.com/jim4067</a>
-                        </li>
-                    </ul>
-                </section>
-            </section>
-
-            <section class="education">
-                <h3>🎓 Education</h3>
-                <hr />
-                <ul class="edu-list">
-                    <li><span class="red-highlight">2019 ~ 2024 </span> University of Nairobi <span
-                            class="grey-highlight"> Nairobi, Kenya</span></li>
-                    <ul>
-                        <li>Pursuing a B.Sc.<strong class="underline"> Astronomy and Astrophysics </strong></li>
-                    </ul>
-                    <li><span class="red-highlight">2015 ~ 2018 </span> Hospital Hill High School <span
-                            class="grey-highlight"> Nairobi, Kenya</span></li>
-                </ul>
-            </section>
-
-            <section class="projects">
-                <h3>👨‍💻 Projects</h3>
-                <hr />
-                <ul class="projects">
-                    <li><span class="red-highlight">2021 ~ present</span><strong> anitrendz-cli</strong></li>
-                    <ul>
-                        <li>CLI application that lists trending anime from Anitrendz.net</li>
-                        <li><span class="red-highlight">Rust</span>
-                            <span class="red-highlight">Reqwest</span>
-                            <span class="red-highlight">Clap</span>
-                        </li>
-                        <li><a href="https://github.com/jim4067/anitrendz-cli"
-                                class="grey-highlight black">https://github.com/jim4067/anitrendz-cli
-                            </a>
-                        </li>
-                    </ul>
-
-                    <li><span class="red-highlight">2021 ~ present</span> <strong>play-song</strong></li>
-                    <ul>
-                        <li>CLI application to play songs in the current directory or in a specified directory</li>
-                        <li><span class="red-highlight">Rust</span>
-                            <span class="red-highlight">Rodio</span>
-                            <span class="red-highlight">Clap</span>
-                        </li>
-                        <li><a href="https://github.com/jim4067/play-song"
-                                class="grey-highlight black">https://github.com/jim4067/play-song
-                            </a>
-                        </li>
-                    </ul>
-
-                    <li><span class="red-highlight">2020.07 ~ 2020.11</span><strong> Blogit</strong></li>
-                    <ul>
-                        <li>A web app that allows the user to save blogs he comes across on the internet</li>
-                        <li><span class="red-highlight">React</span>
-                            <span class="red-highlight">Node</span>
-                            <span class="red-highlight">Express</span>
-                            <span class="red-highlight">MongoDB</span>
-                        </li>
-                        <li><a href="https://github.com/jim4067/blogit"
-                                class="grey-highlight black">https://github.com/jim4067/blogit
-                            </a>
-                        </li>
-                    </ul>
-
-                    <li><span class="red-highlight">2020 ~ present</span><strong> profile</strong></li>
-                    <ul>
-                        <li>profile/portfolio page</li>
-                        <li><span class="red-highlight">React</span>
-                        </li>
-                        <li><a href="https://github.com/jim4067/profile"
-                                class="grey-highlight black">https://github.com/jim4067/profile
-                            </a>
-                        </li>
-                    </ul>
-
-                </ul>
-            </section>
-
-            <section class="toys">
-                <h3>🎲 Toy projects</h3>
-                <hr />
-                <ul class="edu-list">
-                    <li><span class="red-highlight">2020.08</span><strong> send script</strong></li>
-                    <ul>
-                        <li>Simple Rust program to spam your friends with the script of an entire movie</li>
-                        <li><span class="red-highlight">Rust</span>
-                            <span class="red-highlight">autopilot</span>
-                        </li>
-                        <li><a href="https://github.com/jim4067/profile"
-                                class="grey-highlight black">https://github.com/jim4067/profile
-                            </a>
-                        </li>
-                    </ul>
-                </ul>
-            </section>
-
-            <section class="other-acitivities">
-                <h3>🚧 Other Activities</h3>
-                <hr />
-                <ul class="work-list">
-                    <li><span class="red-highlight">2020.05 ~ 2020.09 </span><strong>#100daysofcode</strong></li>
-                    <ul>
-                        <li>Dedicated at least one hour everyday to complete the fullstackopen course.</li>
-                    </ul>
-                    <li><span class="red-highlight">2020.08 ~ </span><strong>OSCA OSS challenge 2021</strong></li>
-                    <ul>
-                        <li>Contributing to as many Open source projects as I can.</li>
-                    </ul>
-                </ul>
-            </section>
-
-        </article>
+        <p>You are here where home is</p>
+        <h1>A WIP</h1>
     </main>
 
-    <footer>
-        <!-- Here you will add, made with love(emoji) by James Mutuku from O.G site driip.me -->
-    </footer>
-
 </body>
-
 </html>
