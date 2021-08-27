@@ -1,0 +1,82 @@
+body{
+    font-family: Alata, sans-serif, Arial, Helvetica ;
+    margin: 10vh 10vw;
+    opacity: .9;
+}
+
+.ul-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.about-me-data {
+    flex: 1;
+}
+.personal-data {
+    flex: 1;
+    list-style-type: none;
+}
+
+li{
+    padding: 4px 2px;
+}
+
+.name{
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+}
+
+.icon{
+    font-size: 54px;
+}
+
+.red-highlight{
+    background: rgba(135,131,120,0.15);
+    border-radius: 2px;
+    color: #EB5757;
+    margin: 0 .3em 0 0;
+    padding: 0 .3em;
+}
+
+.grey-highlight{
+    color: rgb(138, 137, 132);
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.black{
+    opacity: .9;
+    text-decoration: underline;
+    transition: .3s ease-in-out;
+}
+
+.black:hover{
+    color: inherit;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+form{
+    border: 1px solid #CCC;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 500px;
+}
+
+input, textarea{
+    border: 1px solid #999;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+    
+    /* width: 300px; */
+    /* text-align: right; */
+}
+
+.email-input, .message-input{
+    margin: 10px 0;
+}
