@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgb(211, 206, 208));
+    border-radius: 12px;
+}
