@@ -1,12 +1,11 @@
 body {
 	font-family: Alata, sans-serif, Arial, Helvetica;
-	margin: 10vh 10vw;
-	opacity: 0.9;
+	margin: 10vh 10vw 0vh 10vw;
 }
 
 .ul-wrapper {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -28,14 +27,14 @@ li {
 	text-align: center;
 }
 
-.no-dec {
+.name-style {
 	text-decoration: none;
 	color: black;
 	transition: 0.2s ease-in-out;
 }
 
-.no-dec:hover {
-	color: palevioletred;
+.name-style:hover {
+	color: rgb(211, 206, 208);
 	cursor: pointer;
 }
 
@@ -51,22 +50,49 @@ li {
 	padding: 0 0.3em;
 }
 
-.grey-highlight {
-	color: rgb(138, 137, 132);
+.grey-text {
+	color: rgba(49, 49, 48, 0.75);
 }
 
 .underline {
-	text-decoration: underline;
+	border-bottom: 0.1em solid;
 }
 
-.black {
+.black-on-hover {
+	/* border-bottom: 0.05em solid; */
+	border-bottom: 0.05em dotted;
 	opacity: 0.9;
-	text-decoration: underline;
+	text-decoration: none;
 	transition: 0.3s ease-in-out;
 }
 
-.black:hover {
+.black-on-hover:hover {
 	color: inherit;
 	cursor: pointer;
 	opacity: 1;
+}
+
+footer {
+	margin-top: 8vh;
+}
+
+.center {
+	text-align: center;
+}
+
+/* for the small screens less than 600px*/
+@media (max-width: 760px) {
+	.ul-wrapper {
+		display: block;
+	}
+	.about-me-data {
+		margin-block-end: 2px;
+	}
+	.personal-data {
+		margin: auto 15px;
+		padding: 0;
+	}
+	.personal-data > li{
+		padding-top: 12px;
+	}
 }
