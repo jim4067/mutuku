@@ -1,12 +1,27 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    height: 20px;
+	height: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, rgb(211, 206, 208));
-    border-radius: 12px;
+	background: linear-gradient(transparent, rgb(211, 206, 208));
+	border-radius: 12px;
+}
+
+body {
+	font-family: Alata, sans-serif, Arial, Helvetica;
+}
+
+.header-img {
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	width: 100%;
+}
+
+.centre {
+	text-align: center;
 }
