@@ -25,3 +25,13 @@ body {
 .centre {
 	text-align: center;
 }
+
+.pv-highlight{
+	background-color: rgba(135, 131, 120, 0.15);
+	color: palevioletred;
+	transition: .3s ease-in-out;
+}
+
+.pv-highlight:hover{
+	color: black;
+}
