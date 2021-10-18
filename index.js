@@ -11,11 +11,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         return rand_quote
     }
 
-    fetch_quote().then(res => console.log(res));
     let quote = document.getElementById("quote");
-    fetch_quote().then(res => { quote.innerHTML = res.quote });
     let show = document.getElementById("show");
-    fetch_quote().then(res => { show.innerHTML = res.anime });
+    fetch_quote().then(res => {
+        quote.innerHTML = res.quote;
+        show.innerHTML = res.anime
+    }); //now only one show is being made per refresh
 
     //function to auto-update current year
     let current_year = () => {
