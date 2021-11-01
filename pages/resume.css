@@ -3,6 +3,11 @@ body {
 	margin: 10vh 10vw 0vh 10vw;
 }
 
+main {
+	font-family: 'Zen Antique Soft', Alata, sans-serif, Arial, Helvetica;
+
+}
+
 .ul-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -82,6 +87,9 @@ footer {
 
 /* for the small screens less than 600px*/
 @media (max-width: 760px) {
+	main {
+		font-family: Roboto, Arial, Helvetica, sans-serif;
+	}
 	.ul-wrapper {
 		display: block;
 	}
@@ -92,7 +100,17 @@ footer {
 		margin: auto 15px;
 		padding: 0;
 	}
-	.personal-data > li{
+	.personal-data > li {
 		padding-top: 12px;
 	}
+
+	/* .education {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.projects {
+		margin: 0px;
+		padding: 0px;
+	} */
 }
