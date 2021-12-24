@@ -28,7 +28,7 @@ body {
 
 .pv-highlight{
 	background-color: rgba(135, 131, 120, 0.15);
-	color: palevioletred;
+	color: #2B15DC;
 	transition: .3s ease-in-out;
 }
 
