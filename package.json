@@ -1,0 +1,23 @@
+{
+  "name": "mutuku",
+  "version": "1.0.0",
+  "description": "This repo houses my vanilla profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/jim4067/mutuku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jim4067/mutuku/issues"
+  },
+  "homepage": "https://github.com/jim4067/mutuku#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
