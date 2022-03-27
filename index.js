@@ -4,20 +4,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
         "If I always blame someone or something, i'll never change - fruits basket"
     ]
 
-    //generate random quote
-    async function fetch_quote() {
-        const res = await fetch("https://animechan.vercel.app/api/random");
-        const rand_quote = await res.json();
-        return rand_quote
+    //fetch a random page only when we are in the home page
+    if (document.URL.includes("index.html")) {
+        async function fetch_quote() {
+            const res = await fetch("https://animechan.vercel.app/api/random");
+            const rand_quote = await res.json();
+            return rand_quote
+        }
+
+        let quote = document.getElementById("quote");
+        let show = document.getElementById("show");
+        fetch_quote().then(res => {
+            quote.innerHTML = res.quote;
+            show.innerHTML = res.anime
+        }).catch(err => {
+            console.error("encountered this error -> ", err);
+        }); //now only one show is being made per refresh
     }
-
-    let quote = document.getElementById("quote");
-    let show = document.getElementById("show");
-    fetch_quote().then(res => {
-        quote.innerHTML = res.quote;
-        show.innerHTML = res.anime
-    }); //now only one show is being made per refresh
-
     //function to auto-update current year
     let current_year = () => {
         return new Date().getFullYear();
@@ -25,4 +28,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let year = document.getElementById("year");
     year.innerHTML = current_year();
 });
-
