@@ -4,8 +4,7 @@ body {
 }
 
 main {
-	font-family: 'Zen Antique Soft', Alata, sans-serif, Arial, Helvetica;
-
+	font-family: /* 'Zen Antique Soft', */ Alata, sans-serif, Arial, Helvetica;
 }
 
 .ul-wrapper {
