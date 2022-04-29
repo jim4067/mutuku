@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    console.log("stop snooping!!!");
 
     const the_quotes = ["I wanna love free even if that freedom hurts me. I want to decide my happiness for myself -  the promised neverland.",
         "If I always blame someone or something, i'll never change - fruits basket"
