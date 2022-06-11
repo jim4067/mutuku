@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     getLatestCommit().then(res => {
-        console.log("this is the first commit-> ", res);
+        // console.log("this is the first commit-> ", res);
 
         //Awesome Date handling using JavaScript
         const readableDate = new Date(res.commit.author.date);
-        console.log("this the readable date -> ", readableDate.toDateString());
+        console.log("last update was on -> ", readableDate.toDateString());
         // TODO -> Add this date to html for latest update of CV
     }).catch(err => {
         console.error("Error in trying to get the commits from this repo ->", err);
